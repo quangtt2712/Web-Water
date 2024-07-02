@@ -32,7 +32,7 @@ export default function Slider({ onSlideChange }) {
                     clickable: true,
                 }}
                 autoplay={{
-                    delay: 100000, // Thời gian delay giữa các slide (milisecond)
+                    delay: 5000, // Thời gian delay giữa các slide (milisecond)
                     disableOnInteraction: false, // Không dừng autoplay khi người dùng tương tác
                 }}
                 loop={true} // Thêm thuộc tính loop để lặp lại từ đầu khi đến trang cuối

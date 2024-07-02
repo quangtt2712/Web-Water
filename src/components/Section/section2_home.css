@@ -1,0 +1,75 @@
+.section2_home {
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+}
+
+.equal-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tạo 4 cột bằng nhau */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+    width: 100%;
+    z-index: 2;
+}
+
+.equal-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    background-color: transparent; /* Màu nền */
+    color: white; /* Màu chữ */
+    font-size: 2em; /* Kích thước chữ */
+    font-weight: bold; /* Độ dày của chữ */
+    box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến kích thước của phần tử */
+}
+.title-opacity{
+    width: 100%;
+    color: #5492db;
+    font-family: "Allura";
+    font-size: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 17%;
+    opacity: 0.05;
+    text-align: center;
+}
+.img-w {
+    height: 330px;
+    position: relative;
+}
+.name-water-item{
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #363636;
+    padding: 20px;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+}
+
+.viewmore-box {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.viewmore-box p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #5492db;
+    margin: 0;
+    padding: 2px 0;
+    text-align: center;
+}
+.viewmore-box a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #5492db;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
