@@ -38,7 +38,7 @@ const Section2_home = () => {
       <div className="title-opacity">Untouched water</div>
       <div className="viewmore-box">
         <p>Xem thêm</p>
-        <a href="#">tất cả sản phẩm vĩnh hảo</a>
+        <a href="/">tất cả sản phẩm vĩnh hảo</a>
       </div>
     </div>
   );

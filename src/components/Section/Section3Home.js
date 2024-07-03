@@ -21,42 +21,42 @@ const Section3_home = () => {
             của khoáng
           </div>
           <div className="item p1">
-            <a href="#">
+            <a href="/">
               <img src={nuoccam} alt="lynuocam"></img>
             </a>
           </div>
           <div className="item p2">
-            <a href="#">
+            <a href="/">
               <img src={bosungcanxi} alt="canxi"></img>
             </a>
           </div>
           <div className="item p3">
-            <a href="#">
+            <a href="/">
               <img src={nangnieutraitim} alt="lynuocam"></img>
             </a>
           </div>
           <div className="item p4">
-            <a href="#">
+            <a href="/">
               <img src={lidobannenuongkhoangmoingay} alt="lynuocam"></img>
             </a>
           </div>
           <div className="item p5">
-            <a href="#">
+            <a href="/">
               <img src={nguonkhoangnaototchosuckhoe} alt="lynuocam"></img>
             </a>
           </div>
           <div className="item p6">
-            <a href="#">
+            <a href="/">
               <img src={khoangchatnguaungthu} alt="lynuocam"></img>
             </a>
           </div>
           <div className="item p7">
-            <a href="#">
+            <a href="/">
               <img src={dunsoinuocdenguoi} alt="lynuocam"></img>
             </a>
           </div>
           <div className="item p8">
-            <a href="#">
+            <a href="/">
               <img src={bieuhiencothe} alt="lynuocam"></img>
             </a>
           </div>
@@ -64,7 +64,7 @@ const Section3_home = () => {
       </div>
       <div className="viewmore-box">
         <p>Xem thêm</p>
-        <a href="#">BÍ QUYẾT QUYỀN NĂNG CỦA KHOÁNG</a>
+        <a href="/">BÍ QUYẾT QUYỀN NĂNG CỦA KHOÁNG</a>
       </div>
     </div>
   );
