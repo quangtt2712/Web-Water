@@ -23,14 +23,14 @@ const Section1_home = () => {
                         </div>
 
                     </div>
-                    <div class="number-3">
-                        <div class="number-item"><span>1</span></div>
-                        <div class="number-item"><span>2</span></div>
-                        <div class="number-item"><span>3</span></div>
-                        <div class="number-item"><span>4</span></div>
-                        <div class="number-item"><span>5</span></div>
-                        <div class="number-item"><span>6</span></div>
-                        <div class="number-item"><span>7</span></div>
+                    <div className="number-3">
+                        <div className="number-item"><span>1</span></div>
+                        <div className="number-item"><span>2</span></div>
+                        <div className="number-item"><span>3</span></div>
+                        <div className="number-item"><span>4</span></div>
+                        <div className="number-item"><span>5</span></div>
+                        <div className="number-item"><span>6</span></div>
+                        <div className="number-item"><span>7</span></div>
                     </div>
 
                 </div>

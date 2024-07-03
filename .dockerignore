@@ -1,16 +1,27 @@
-# Bỏ qua node_modules
+# Node modules and dependencies
 node_modules
-
-# Bỏ qua các tệp tạm thời
 npm-debug.log
-yarn-error.log
 
-# Bỏ qua tệp cấu hình môi trường
-.env
-
-# Bỏ qua các thư mục build và dist cũ
+# Output directories
 build
 dist
 
-# Bỏ qua các thư mục git
-.git
+# Local environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode
+.idea
+*.swp
+*~
