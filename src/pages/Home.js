@@ -1,16 +1,16 @@
 import React from "react";
 import Slider from "../components/Slider/Slider";
-import Section1_home from "../components/Section/section1_home.js";
-import Section2_home from "../components/Section/section2_home.js";
-import Section3_home from "../components/Section/section3_home.js";
+import Section1Home from "../components/Section/Section1Home";
+import Section2Home from "../components/Section/Section2Home";
+import Section3Home from "../components/Section/Section3Home";
 
 const Home = ({ onSlideChange }) => {
     return (
         <div>
             <Slider onSlideChange={onSlideChange} />
-            <Section1_home />
-            <Section2_home />
-            <Section3_home />
+            <Section1Home />
+            <Section2Home />
+            <Section3Home />
         </div>
     );
 }
