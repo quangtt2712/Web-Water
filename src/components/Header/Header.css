@@ -37,17 +37,19 @@
     margin: 9px 4px;
     background: #155fc2;
 }
+
 .hotline {
     text-transform: uppercase;
     color: #fff;
-
 }
+
 .hotline a {
     color: rgb(143, 236, 138);
     font-family: SVN_CeraBold;
     letter-spacing: 0.5px;
     margin-left: 5px;
 }
+
 .call {
     background: #F40C07;
     position: relative;
@@ -69,6 +71,7 @@
     top: 0;
     right: 178px;
 }
+
 .call span {
     color: #fff;
     padding-right: 10px;
@@ -77,14 +80,20 @@
 .call span:hover {
     color: rgb(143, 236, 138);
 }
+
 .navigation {
     width: 100%;
     z-index: 400;
     -webkit-transition: all 0.3s;
-    position: absolute;
+    position: fixed;
     top: 41px;
     background: transparent;
 }
+
+.navigation.active ul li a::after {
+    background: white;
+}
+
 .navigation ul {
     padding: 0;
     margin: 0;
@@ -114,10 +123,12 @@
     -o-transition: all 0.3s;
     color: #0b4a91;
 }
+
 .navigation ul li.logo {
     top: -1px;
     padding: 0px 0px 0 0;
 }
+
 .navigation ul li a {
     position: relative;
     text-decoration: none;
@@ -128,7 +139,7 @@
     position: absolute;
     width: 0;
     height: 2px; /* Độ dày của đường gạch chân */
-    background: black; /* Màu sắc của đường gạch chân */
+    background: #0b4a91; /* Màu sắc của đường gạch chân */
     bottom: -2px; /* Vị trí của đường gạch chân */
     left: 50%;
     transition: all 0.3s ease;
@@ -138,6 +149,20 @@
     width: 100%;
     left: 0;
 }
+
 .navigation ul li.logo a::after {
     content: none;
+}
+.navigation.scrolled {
+    position: fixed;
+    background: rgba(163, 208, 224, 0.9);
+    z-index: 600;
+}
+
+.navigation.scrolled li img{
+    width: 90px;
+}
+
+.navigation.scrolled li {
+    top: -20.5px;
 }
