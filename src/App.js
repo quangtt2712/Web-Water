@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-import { BrowserRouter as  Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import { useState } from 'react';
 import Footer from './components/Footer/footer';
@@ -8,7 +8,7 @@ import Footer from './components/Footer/footer';
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const handleSlideChange = (index) => {
-      setCurrentSlide(index);
+    setCurrentSlide(index);
   };
 
   return (
