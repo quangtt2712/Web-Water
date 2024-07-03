@@ -1,0 +1,52 @@
+.section1_prolist {
+    width: 100%;
+    background-color: #FFF;
+    background-image: url('../../assets/bgsec1_prolist.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 80px;
+}
+.section-top {
+    padding-top: 160px;
+}
+.title-main {
+    color: #363636;
+    font-size: 48px;
+    letter-spacing: 0.5px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 30px 0;
+    z-index: 10;
+}
+.slider-product-listing {
+    padding: 30px 0;
+    position: relative;
+    z-index: 10;
+}
+.slider-product-listing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia làm 4 cột bằng nhau */
+    gap: 10px; /* Khoảng cách giữa các phần tử, nếu muốn */
+}
+
+.product-list {
+    width: 265px;
+    padding: 20px; /* Khoảng cách bên trong phần tử */
+    text-align: center; /* Căn giữa nội dung bên trong phần tử */
+}
+.slider-list-item {
+    flex-direction: column;
+}
+
+.product-list p {
+    font-size: 12px;
+    color: #656565;
+    padding-top: 30px;
+}
+
+.fix-untouch {
+    top: 40%;
+}

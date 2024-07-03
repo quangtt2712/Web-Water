@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = ({ currentSlide }) => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -47,9 +48,9 @@ const Header = ({ currentSlide }) => {
             </a>
           </li>
           <li>
-            <a href="/" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
+            <Link to="/san-pham" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
               Sản phẩm
-            </a>
+            </Link>
           </li>
           <li className="logo">
             <a href="/">

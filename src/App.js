@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import { useState } from 'react';
 import Footer from './components/Footer/footer';
+import Prolist from './pages/Prolist';
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home onSlideChange={handleSlideChange} />} />
+          <Route path="/san-pham" element={<Prolist />} />
         </Routes>
       </main>
       <Footer />
