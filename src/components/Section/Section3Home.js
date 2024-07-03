@@ -1,7 +1,6 @@
 import React from "react";
 import "./section3_home.css";
 import nuoccam from "../../assets/nuoccam.jpg";
-import bgcaptiongallery from "../../assets/bgcaption-gallery.jpg";
 import bosungcanxi from "../../assets/bosungcanxi.jpg";
 import nangnieutraitim from "../../assets/nangnieutraitim.jpg";
 import lidobannenuongkhoangmoingay from "../../assets/7lidobannenuongkhoangmoingay.jpg";
