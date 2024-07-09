@@ -1,0 +1,75 @@
+.section2_news .block1 .title {
+    font-size: 24px;
+    color: #363636;
+    line-height: 75px;
+}
+.event-new {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: start;
+}
+
+.block1 {
+    width: 100%;
+}
+.new-event-sc {
+    display: flex;
+    justify-content: center; /* Canh giữa các phần tử con theo chiều ngang */
+    align-items: center; /* Canh giữa các phần tử con theo chiều dọc */
+}
+
+.content-event {
+    position: relative; /* Để lớp phủ overlay có thể định vị tuyệt đối bên trong */
+}
+
+.content-event img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của khung chứa */
+    height: auto; /* Duy trì tỷ lệ ảnh */
+}
+.overlay {
+    position: absolute; /* Định vị tuyệt đối bên trong khung chứa */
+    bottom: 5px; /* Khoảng cách từ dưới lên */
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen với độ trong suốt */
+    color: white; /* Màu chữ trắng */
+    padding: 5px 10px; /* Khoảng cách bên trong khung chữ */
+    border-radius: 5px; /* Bo tròn góc khung chữ */
+    font-size: x-large;
+}
+.section2_news .block2 {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.title-tab .line-new {
+    display: inline-block;
+    margin: 0px 10px;
+}
+.title-tab {
+    font-size: 24px;
+    line-height: 75px;
+    color: #363636;
+}
+.block2 {
+    width: 100%;
+}
+.content-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* khoảng cách giữa các phần tử */
+  }
+  
+  .content-new {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .content-new img {
+    max-width: 100%; /* đảm bảo hình ảnh không vượt quá kích thước của container */
+    height: auto;
+    border: 1px solid #ccc; /* đường viền quanh hình ảnh */
+    border-radius: 5px; /* bo góc hình ảnh */
+  }
+
+  .event-text {
+    font-size: medium;
+  }

@@ -1,23 +1,28 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = ({ currentSlide }) => {
-    const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 0);
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-    const navClass = `${currentSlide === 1 && !isScrolled ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`;
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navClass = `${currentSlide === 1 && !isScrolled ? "active" : ""} ${
+    isScrolled ? "scrolled" : ""
+  } ${location.pathname === "/tintuc-sukien" ? "white-text" : ""}`;
+
   return (
-    <header>
+    <header className="header-main">
       <div className="top-nav">
         <div className="contact padding-header">
           <a href="/">Liên hệ</a>
@@ -38,20 +43,26 @@ const Header = ({ currentSlide }) => {
       <div className={`navigation ${navClass}`}>
         <ul>
           <li>
-            <a href="/" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
+            <Link
+              to="/"
+              style={{
+                color: currentSlide === 1 && !isScrolled ? "white" : "",
+              }}
+            >
               Trang chủ
-            </a>
-          </li>
-          <li>
-            <a href="/" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
-              Câu chuyện vĩnh hảo
-            </a>
-          </li>
-          <li>
-            <Link to="/san-pham" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
-              Sản phẩm
             </Link>
           </li>
+          <li>
+            <Link
+              to="/cau-chuyen-truyen-doi"
+              style={{
+                color: currentSlide === 1 && !isScrolled ? "white" : "",
+              }}
+            >
+              Câu chuyện vĩnh hảo
+            </Link>
+          </li>
+
           <li className="logo">
             <a href="/">
               <img
@@ -61,19 +72,24 @@ const Header = ({ currentSlide }) => {
             </a>
           </li>
           <li>
-            <a href="/" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
-              GIỚI THIỆU
-            </a>
+            <Link
+              to="/san-pham"
+              style={{
+                color: currentSlide === 1 && !isScrolled ? "white" : "",
+              }}
+            >
+              Sản phẩm
+            </Link>
           </li>
           <li>
-            <a href="/" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
+            <Link
+              to="/tintuc-sukien"
+              style={{
+                color: currentSlide === 1 && !isScrolled ? "white" : "",
+              }}
+            >
               TIN TỨC & SỰ KIỆN
-            </a>
-          </li>
-          <li>
-            <a href="/" style={{ color: currentSlide === 1 && !isScrolled ? "white" : "" }}>
-              THÔNG TIN
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

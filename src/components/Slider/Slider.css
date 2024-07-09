@@ -92,3 +92,44 @@
 .white-text{
   color: #fff;
 }
+
+/* Media queries cho thiết bị di động */
+@media (max-width: 768px) {
+  .mySwiper .swiper-slide img {
+    margin-top: 41px;
+    max-width: inherit;
+    width: 760px;
+    height: 380px;
+    transform: translateX(-30%);
+  }
+  .title-1 {
+    font-size: 19px;
+  }
+  .title-2 {
+    max-width: 199px;
+    font-size: 47px;
+    line-height: 65px;
+    padding-bottom: 20px;
+  }
+  .text {
+    display: none;
+  }
+  .navigation{
+    position: absolute;
+  }
+  .navigation.scrolled {
+    background: transparent;
+    z-index: 0;
+    position: absolute;
+  }
+  .box-layout {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .number-1 {
+  padding-top: 40px !important;
+    width: 125px !important;
+    height: 202px !important;
+    font-size: 14px !important;
+  }
+}

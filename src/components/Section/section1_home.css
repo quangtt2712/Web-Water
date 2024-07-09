@@ -44,7 +44,7 @@
 .number-1 {
     width: 70%;
     height: 291px;
-    background: url('../../assets/num7.png');
+    background: url('../../assets/num7.png') no-repeat top right;
     font-size: 22px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -130,3 +130,8 @@ sub {
 .number-item:hover span {
     color: aqua; /* Màu chữ khi hover */
 }
+sup {
+    position: relative;
+    bottom: .25em ;
+}
+

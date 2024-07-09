@@ -1,0 +1,12 @@
+.section1_news {
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+.banner-event {
+    background: url('../../assets/banner-evnt.jpg') no-repeat top center;
+    background-size: cover;
+}
+.text-event {
+    color: #fff !important;
+}

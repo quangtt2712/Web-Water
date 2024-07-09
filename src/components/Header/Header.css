@@ -1,168 +1,225 @@
 .top-nav {
-    width: 100%;
-    max-width: 1920px;
-    height: 41px;
-    overflow: hidden;
-    background: #0b4a91;
-    z-index: 500;
-    position: fixed;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  max-width: 1920px;
+  height: 41px;
+  overflow: hidden;
+  background: #0b4a91;
+  z-index: 500;
+  position: fixed;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .padding-header {
-    padding: 10px 15px;
+  padding: 10px 15px;
 }
 
 .contact a {
-    letter-spacing: 0.5px;
-    -webkit-transition: all 0.3s;
-    color:  rgb(255, 255, 255);
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 20px;
-    background-color: transparent;
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.3s;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: transparent;
 }
 
 .contact a:hover {
-    color: rgb(143, 236, 138);
+  color: rgb(143, 236, 138);
 }
 
 .line {
-    width: 1px;
-    height: 24px;
-    margin: 9px 4px;
-    background: #155fc2;
+  width: 1px;
+  height: 24px;
+  margin: 9px 4px;
+  background: #155fc2;
 }
 
 .hotline {
-    text-transform: uppercase;
-    color: #fff;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .hotline a {
-    color: rgb(143, 236, 138);
-    font-family: SVN_CeraBold;
-    letter-spacing: 0.5px;
-    margin-left: 5px;
+  color: rgb(143, 236, 138);
+  font-family: SVN_CeraBold;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
 }
 
 .call {
-    background: #F40C07;
-    position: relative;
-    padding-left: 15px;
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  background: #f40c07;
+  position: relative;
+  padding-left: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .call::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 30px 100px 30px;
-    border-color: transparent transparent #F40C07 transparent;
-    position: absolute;
-    top: 0;
-    right: 178px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 100px 30px;
+  border-color: transparent transparent #f40c07 transparent;
+  position: absolute;
+  top: 0;
+  right: 178px;
 }
 
 .call span {
-    color: #fff;
-    padding-right: 10px;
+  color: #fff;
+  padding-right: 10px;
 }
 
 .call span:hover {
-    color: rgb(143, 236, 138);
+  color: rgb(143, 236, 138);
 }
 
 .navigation {
-    width: 100%;
-    z-index: 400;
-    -webkit-transition: all 0.3s;
-    position: fixed;
-    top: 41px;
-    background: transparent;
+  width: 100%;
+  z-index: 400;
+  -webkit-transition: all 0.3s;
+  position: fixed;
+  top: 41px;
+  background: transparent;
 }
 
 .navigation.active ul li a::after {
-    background: white;
+  background: white;
 }
 
 .navigation ul {
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .navigation ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0px 28px;
-    position: relative;
-    top: -47.5px;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
+  list-style: none;
+  display: inline-block;
+  padding: 0px 28px;
+  position: relative;
+  top: -47.5px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
 .navigation ul li a {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    line-height: 22px;
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    color: #0b4a91;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  color: #0b4a91;
 }
 
 .navigation ul li.logo {
-    top: -1px;
-    padding: 0px 0px 0 0;
+  top: -1px;
+  padding: 0px 0px 0 0;
 }
 
 .navigation ul li a {
-    position: relative;
-    text-decoration: none;
+  position: relative;
+  text-decoration: none;
 }
 
 .navigation ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px; /* Độ dày của đường gạch chân */
-    background: #0b4a91; /* Màu sắc của đường gạch chân */
-    bottom: -2px; /* Vị trí của đường gạch chân */
-    left: 50%;
-    transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Độ dày của đường gạch chân */
+  background: #0b4a91; /* Màu sắc của đường gạch chân */
+  bottom: -2px; /* Vị trí của đường gạch chân */
+  left: 50%;
+  transition: all 0.3s ease;
 }
 
 .navigation ul li:hover a::after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 .navigation ul li.logo a::after {
-    content: none;
+  content: none;
 }
 .navigation.scrolled {
-    position: fixed;
-    background: rgba(163, 208, 224, 0.9);
-    z-index: 600;
+  position: fixed;
+  background: rgba(163, 208, 224, 0.9);
+  z-index: 600;
 }
 
-.navigation.scrolled li img{
-    width: 90px;
+.navigation.scrolled li img {
+  width: 90px;
 }
 
 .navigation.scrolled li {
-    top: -20.5px;
+  top: -20.5px;
+}
+/* Thêm lớp này để làm chữ trắng khi ở đường dẫn /tintuc-sukien */
+.navigation.white-text ul li a {
+  color: white !important;
+}
+.navigation.white-text ul li a::after {
+  background: white; /* Màu sắc của đường gạch chân */
+}
+@media (max-width: 768px) {
+  .navigation ul li {
+    display: none;
+  }
+  
+  /* Hiển thị thẻ <li> có class 'logo' */
+  .navigation ul li.logo {
+    display: block !important;
+  }
+  .section2_home {
+    display: none !important;
+  }
+  .gallery-productlisting {
+    display: none;
+  }
+
+  .top-nav {
+    position: fixed; /* Định vị tương đối với cha của nó */
+  }
+  .hotline {
+    display: none;
+  }
+
+  .call {
+    margin-left: 0;
+    padding: 5px 10px;
+  }
+
+  .call::before {
+    display: none;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .navigation ul li.logo {
+    order: -1;
+    top: 0;
+  }
+
+  .navigation li img {
+    width: 100px;
+  }
+
+
 }
